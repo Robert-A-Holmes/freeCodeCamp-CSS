@@ -1,0 +1,24 @@
+body {
+  background-color: rosybrown;
+  font-family: Arial, sans-serif;
+}
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+a {
+  text-decoration: none;
+}
+.business-card {
+  width: 300px;
+  margin-top: 100px;
+  padding: 20px;
+  font-size: 16px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(3, 144, 144);
+}
+.profile-image {
+  max-width: 100%;
+}

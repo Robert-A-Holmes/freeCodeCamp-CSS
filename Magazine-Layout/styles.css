@@ -1,0 +1,71 @@
+*, ::before, ::after {
+  font-size: 62.5%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.magazine-cover {
+  display: grid;
+  grid-template-areas:
+    "title title title"
+    "feature-article feature-article cover-image"
+    "small-article1 small-article2 cover-image";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  width: 90%;
+  margin: 5% auto;
+  gap: 10px;
+  background-color: blanchedalmond;
+  padding: 0 1.5rem;
+}
+
+.title {
+  grid-area: title;
+  text-align: center;
+  font-size: 6rem;
+  font-weight: bold;
+  color: orangered;
+  background-color: gray;
+}
+
+.feature-article {
+  grid-area: feature-article;
+  text-align: justify;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.feature-title, .article-title {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 1.3rem;
+}
+
+.small-article1, .small-article2 {
+  padding: 1rem;
+  background-color: lightslategray;
+}
+
+.small-article1 {
+  grid-area: small-article1;
+}
+
+.small-article2 {
+  grid-area: small-article2;
+}
+
+.cover-image {
+  display: flex;
+  background-color: gray;
+  padding: 1rem;
+  grid-area: cover-image;
+}
+
+.cover-image img {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}

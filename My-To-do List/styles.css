@@ -1,0 +1,44 @@
+.title {
+  text-align: center;
+  color: rgb(199, 137, 2);
+  text-decoration: underline;
+}
+.container {
+  margin: 20px auto 20px auto;
+  width: 80%;
+  max-width: 400px;
+  background-color: rgb(68, 68, 68);
+  padding: 20px;
+  border-radius: 10px;
+}
+.todo-list li {
+  background-color: rgb(77, 99, 56);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.todo-item {
+  list-style-type: none;
+  width: 80%;
+}
+.sub-item {
+  list-style-type: square;
+}
+.sub-item-link:link {
+  color: red;
+}
+.sub-item-link:active {
+  color: orange;
+}
+.sub-item-link:hover {
+  color: aqua;
+}
+.sub-item-link:visited {
+  color: pink;
+}
+.sub-item-link:focus {
+  outline: 2px solid blue;
+}
+a {
+  text-decoration: none;
+}

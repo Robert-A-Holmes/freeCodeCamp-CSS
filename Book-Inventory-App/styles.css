@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100vw;
+}
+
+thead {
+  background-image: linear-gradient(rgba(1, 57, 105, 0.5), rgba(44, 154, 250, 0.5))
+}
+
+th {
+  padding: 0.5em;
+}
+
+td {
+  text-align: center;
+  padding: 0.4em;
+}
+
+tr[class="read"] {
+  background-image: linear-gradient(rgba(0, 255, 0, 0.4), rgba(85, 255, 85, 0.4));
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(rgba(255, 230, 0, 0.4), rgba(253, 239, 161, 0.4));
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(rgba(255, 0, 0, 0.4), rgba(255, 85, 85, 0.4));
+}
+
+span {
+  display: inline-block;
+}
+
+span[class="status"], span[class^="rate"] {
+  height: 1.85em;
+  width: 7em;
+  padding: 0.3em;
+  border-radius: 10px;
+  text-align: center;
+}
+
+tr[class="read"] span[class="status"] {
+  border: 0.1em solid green;
+  background-image: linear-gradient(rgb(0, 240, 0), rgb(85, 240, 85));
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: 0.1em solid yellow;
+  background-image: linear-gradient(rgb(240, 224, 0), rgb(240, 224, 85));
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: 0.1em solid red;
+  background-image: linear-gradient(rgb(240, 0, 0), rgb(240, 85, 85));
+}
+
+span[class~="three"] span {
+  background-image: linear-gradient(yellow, yellow);
+}
+
+span[class~="two"] :nth-child(1), span[class~="two"] :nth-child(2) {
+  background-image: linear-gradient(yellow, yellow);
+}
+
+span[class~="one"] :first-child {
+  background-image: linear-gradient(yellow, yellow);
+}
+
+span[class^="rate"] > span {
+    border: 0.1em solid gray;
+    border-radius: 50%;
+    background-color: white;
+    height: 100%;
+    width: 20%;
+    margin: 0.1em;
+}

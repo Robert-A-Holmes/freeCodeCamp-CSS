@@ -1,0 +1,23 @@
+body {
+  padding: 50px 10px;
+  margin: 0 auto;
+  min-height: calc(100vh - 100px);
+  width: 90vw;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: white;
+}
+hr {
+  width: 80%;
+  margin: 15px auto;
+  height: 5px;
+  background-color: black;
+}
+section {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+}
+li {
+  text-align: left;
+}

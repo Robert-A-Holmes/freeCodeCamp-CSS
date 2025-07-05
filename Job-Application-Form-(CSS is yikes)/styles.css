@@ -1,0 +1,38 @@
+input:focus, textarea:focus {
+  border: 5px solid aqua;
+  border-color: aqua;
+}
+input:invalid, select:invalid, textarea:invalid {
+  border-color: red;
+}
+* {
+  font-family:'Times New Roman', Times, serif
+}
+body {
+  padding: 20px;
+  background-color: white;
+}
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+input:valid, select:valid, textarea:valid {
+  border-color: green;
+}
+button:hover {
+  background-color: rgb(0, 155, 255);
+}
+input:first-of-type {
+  border-radius: 10px;
+}
+.radio-group input[type="radio"]:checked {
+  border-color: darkblue;
+  background-color: aqua;
+  box-shadow: 0 0 0 4px green;
+}
+.radio-group input[type="radio"]:checked + label {
+  color: green;
+}
